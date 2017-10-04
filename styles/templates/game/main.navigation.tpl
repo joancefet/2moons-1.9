@@ -37,6 +37,7 @@
 		<a style="color:green;" href="game.php?page=lucky">Lucky 7 Days Package</a>
 		<a style="color:green;" href="game.php?page=resBonus">Resources Bonus</a>
 		<a style="color:green;" href="game.php?page=immunity">Immunity</a>
+		<a style="color:green;" href="game.php?page=jackpot">Jackpot</a>
 
 		<li class="menucat3-head"></li>
 		{if isModuleAvailable($smarty.const.MODULE_MESSAGES)}<li><a href="game.php?page=messages">{$LNG.lm_messages}{nocache}{if $new_message > 0}<span id="newmes"> (<span id="newmesnum">{$new_message}</span>)</span>{/if}{/nocache}</a></li>{/if}

@@ -287,6 +287,10 @@ CREATE TABLE `%PREFIX%config` (
   `disclamerMail` text NOT NULL,
   `disclamerNotice` text NOT NULL,
   `alliance_create_min_points` BIGINT UNSIGNED NOT NULL DEFAULT 0,
+  `jackpot_update` int(11) NOT NULL DEFAULT '0',
+	`jackpot_update1` int(11) NOT NULL DEFAULT '0',
+	`jackpot_code` int(11) NOT NULL DEFAULT '357',
+	`jackpot_prize` double(100,0) NOT NULL DEFAULT '500000',
   PRIMARY KEY (`uni`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
 
@@ -794,6 +798,7 @@ CREATE TABLE `%PREFIX%users` (
   `res_bonus_time` int(11) NOT NULL DEFAULT '0',
   `next_immunity` int(11) NOT NULL DEFAULT '0',
   `immunity_until` int(11) NOT NULL DEFAULT '0',
+	`jackpot` int(11) NOT NULL DEFAULT '5',
   PRIMARY KEY (`id`),
   KEY `authlevel` (`authlevel`),
   KEY `ref_bonus` (`ref_bonus`),
@@ -931,6 +936,17 @@ CREATE TABLE `%PREFIX%vars_requriements` (
   KEY `elementID` (`elementID`),
   KEY `requireID` (`requireID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+/**
+ * Table Addon Mods
+ */
+ CREATE TABLE `%PREFIX%jackpot_logs` (
+	`id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(32) NOT NULL,
+  `date` int(11) NOT NULL DEFAULT '0',
+  `reward` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `%PREFIX%config` (`uni`, `VERSION`, `uni_name`, `game_name`, `close_reason`, `OverviewNewsText`, `moduls`, `disclamerAddress`, `disclamerPhone`, `disclamerMail`, `disclamerNotice`) VALUES
 (1, '%VERSION%', '', '2Moons', '', '', '', '', '', '', '');

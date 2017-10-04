@@ -18,6 +18,7 @@ A support is of course at your disposal either by the forum of [2moons](http://2
   - Def Bonus
   - Immunity
   - Jackpot
+  - Relocate
 
 ## Developer
 + Project Leader

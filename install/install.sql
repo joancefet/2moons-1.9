@@ -792,6 +792,8 @@ CREATE TABLE `%PREFIX%users` (
   `fleet_bonus_time` int(11) NOT NULL DEFAULT '0',
   `bonus_page_time2` int(11) NOT NULL DEFAULT '0',
   `res_bonus_time` int(11) NOT NULL DEFAULT '0',
+  `next_immunity` int(11) NOT NULL DEFAULT '0',
+  `immunity_until` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `authlevel` (`authlevel`),
   KEY `ref_bonus` (`ref_bonus`),

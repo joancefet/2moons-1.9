@@ -7,7 +7,8 @@ A support is of course at your disposal either by the forum of [2moons](http://2
 
 ## Development follow-up
 + Design
-  - standard
+  - Custom Login
+  - Ingame standard
 + Bug Liste
   - none 
 + Mods Lists
@@ -15,12 +16,13 @@ A support is of course at your disposal either by the forum of [2moons](http://2
   - Lucky
   - Fleet Bonus
   - Def Bonus
+  - Immunity
 
 ## Developer
 + Project Leader
-  - Hike (Danter14)
+  - Danter14 (Hike)
 + Project Participant
-  - mimikri
+  - Person currently
 + Thanks Translate
   - Person currently
 

@@ -13,7 +13,7 @@
 							<input type="hidden" value="{$externalAuth.method}" name="externalAuth[method]">
 							<input type="hidden" value="{$referralData.id}" name="referralID">
 							<div class="form-group">
-								<label for="universe">{$LNG.universe}</label>
+								<label for="universe">{$LNG.chose_a_uni}</label>
 								<select name="uni" id="universe" class="form-control changeAction">{html_options options=$universeSelect selected=$UNI}</select>
 								{if !empty($error.uni)}<span class="error errorUni"></span>{/if}
 							</div>

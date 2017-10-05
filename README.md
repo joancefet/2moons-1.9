@@ -24,9 +24,13 @@ A support is of course at your disposal either by the forum of [2moons](http://2
 + Project Leader
   - Danter14 (Hike)
 + Project Participant
-  - Person currently
+  - jamsheehan
+  - klon23
 + Thanks Translate
-  - Person currently
+  - jamsheehan (en)
 
 ## Free Version
 > **Version 1.9**
+
+## Patch to mods 
+ - Immunitiy (Correctif by klon23)

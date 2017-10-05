@@ -7,7 +7,7 @@
  * @version 1.0
  * @link http://2moons.de
  */
-class ShowMoonbuyPage extends AbstractGamePage
+class ShowMoonBuyPage extends AbstractGamePage
 {	
 	public static $requireModule = 0;
 	

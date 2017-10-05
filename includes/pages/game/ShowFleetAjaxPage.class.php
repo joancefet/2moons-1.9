@@ -130,7 +130,7 @@ class ShowFleetAjaxPage extends AbstractGamePage
 		planet.system as system,
 		planet.planet as planet,
 		planet.planet_type as planet_type,
-		total_points, onlinetime, urlaubs_modus, banaday, authattack
+		total_points, onlinetime, urlaubs_modus, banaday, immunity_until, authattack
 		FROM %%PLANETS%% planet
 		INNER JOIN %%USERS%% user ON planet.id_owner = user.id
 		LEFT JOIN %%STATPOINTS%% as stat ON stat.id_owner = user.id AND stat.stat_type = '1'
@@ -149,6 +149,9 @@ class ShowFleetAjaxPage extends AbstractGamePage
 			if(Config::get()->adm_attack == 1 && $targetData['authattack'] > $USER['authlevel']) {
 				$this->sendData(619, $LNG['fa_action_not_allowed']);
 			}
+            if($targetData['immunity_until'] > TIMESTAMP){
+                $this->sendData(619, $LNG['fa_immunity_mode']);
+            }
 
 			if (IsVacationMode($targetData)) {
 				$this->sendData(605, $LNG['fa_vacation_mode']);

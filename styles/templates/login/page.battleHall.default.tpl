@@ -5,7 +5,7 @@
 			<div class="col-lg-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">{$LNG.siteTitleBattleHall}</div>
-                    {if $isMultiUniverse}<p>{html_options options=$universeSelect selected=$UNI class="changeUni" id="universe" name="universe"}</p>{/if}
+                    {if $isMultiUniverse}<p>{html_options options=$universeSelect selected=$UNI class="form-control changeUni" id="universe" name="universe"}</p>{/if}
 					<table class="table table-hover">
 						<thead>
 							<tr>

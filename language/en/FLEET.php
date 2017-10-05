@@ -1,21 +1,21 @@
 <?php
 /**
- *  2Moons 
+ *  2Moons
  *   by Jan-Otto Kröpke 2009-2016
  *
  * For the full copyright and license information, please view the LICENSE
  *
  * @package 2Moons
- * @author Jan-Otto Kröpke <slaver7@gmail.com>
- * @copyright 2009 Lucky
- * @copyright 2016 Jan-Otto Kröpke <slaver7@gmail.com>
+ * @author mvw <mvgadmin@gmail.com>
+ * @copyright 2017 2moons
+ * @copyright 2017 Jan-Otto Kröpke <slaver7@gmail.com>
  * @licence MIT
- * @version 1.8.0
- * @link https://github.com/jkroepke/2Moons
+ * @version 1.9.0
+ * @link https://github.com/HikeGame/2moons-1.9
  */
 
-// Translated into English by QwataKayean . All rights reversed (C) 2012
-// 2Moons - Copyright (C) 2010-2012 Slaver
+// Translated into English by mvw. All rights reversed (C) 2017
+// 2Moons - Copyright (C) 2010-2017
 
 $LNG['and']							= 'and';
 
@@ -25,7 +25,7 @@ $LNG['sys_attacker_lostunits'] 				= "The attackers losses:";
 $LNG['sys_defender_lostunits'] 				= "The defenders losses:";
 $LNG['sys_units']							= "units";
 $LNG['debree_field_1'] 						= "At the coordinates are now:";
-$LNG['debree_field_2']						= "debris.";
+$LNG['debree_field_2']						= "debris";
 $LNG['sys_moonproba'] 						= "Moon Chance: ";
 $LNG['sys_moonbuilt'] 						= "A moon formed at the planet %s [%d:%d:%d] !";
 $LNG['sys_attack_title']    				= "The following fleets face each other on: ";
@@ -50,7 +50,7 @@ $LNG['sys_both_won'] 						= "The fight ends in a draw! ";
 $LNG['sys_stealed_ressources'] 				= "He captures";
 $LNG['sys_and']								= "and";
 $LNG['sys_mess_tower'] 						= "Fleet Headquarters";
-$LNG['sys_mess_attack_report'] 				= "Fight report";
+$LNG['sys_mess_attack_report'] 				= "Battel Report";
 $LNG['sys_spy_fleet'] 						= "Fleet";
 $LNG['sys_spy_defenses'] 					= "Defenses";
 $LNG['sys_mess_qg'] 						= "Spying department";
@@ -70,7 +70,7 @@ $LNG['sys_stat_mess_stay']           		= 'Located fleet';
 $LNG['sys_stat_mess'] 		         		= 'Your fleet reaches the planet %s and delivers %s %s, %s %s and %s %s.';
 
 $LNG['sys_colo_mess_from'] 					= "Colonisation";
-$LNG['sys_colo_mess_report'] 				= "Colonisation report";
+$LNG['sys_colo_mess_report'] 				= "Colonisation Report";
 $LNG['sys_colo_defaultname'] 				= "Colony";
 $LNG['sys_colo_notech'] 					= 'One of your fleets reached the coordinates %s. When your settlers approached the planet, they had to determine that their equipment still not for the prevailing climate was suitable and must be developed first. Disappointed, the settlers returned.';
 $LNG['sys_colo_arrival'] 					= "";
@@ -83,7 +83,7 @@ $LNG['sys_expe_report'] 					= "Expedition report";
 $LNG['sys_recy_report'] 					= "Recycling Report";
 $LNG['sys_expe_found_ships_nothing']		= 'No ships could be found.';
 $LNG['sys_expe_blackholl_1'] 				= "Your fleet encountered a black hole and was partly destroyed! ";
-$LNG['sys_expe_blackholl_2'] 				= "Your fleet encountered a black hole and was destroyed completely! ";
+$LNG['sys_expe_blackholl_2'] 				= "Your fleet encountered a black hole and was completely destroyed! ";
 $LNG['sys_expe_found_goods'] 				= "Your researchers have found a planet rich in raw materials! <br>It has %s %s, %s %s and %s %s mined";
 $LNG['sys_expe_found_ships'] 				= "Your researchers have found spaceships which were in perfect condition!.<br>: ";
 $LNG['sys_expe_back_home'] 					= "Your fleet has returned from the expedition. ";
@@ -111,7 +111,7 @@ $LNG['sys_expe_found_ships_1_2']			= 'We have found a deserted pirate base. Some
 $LNG['sys_expe_found_ships_1_3']			= 'Our expedition found a planet which was almost completly destroyed by wars. Various shipwrecks drifted in the orbit. The technicians try to repair some of these. Perhaps we also find information on what has happened here.';
 $LNG['sys_expe_found_ships_1_4']			= 'The expedition stumbled upon an old starbase which seems to be abandoned for an eternity. A couple of ships were found in the hangar of the fortress. The technicians managed to get some of them flying again.';
 $LNG['sys_expe_found_ships_2_1']			= 'We have found the remains of an armada. The technicians of the expedition have immediately gone onto the partly intact ships and were able to repair some of them.';
-$LNG['sys_expe_found_ships_2_2']			= 'Our expedition discovered an old, automatic shipyard. Some ships still were in the production phase and our technicians tried to finish the construction, the energy supply of the shipyard first needed to be restored.'; 
+$LNG['sys_expe_found_ships_2_2']			= 'Our expedition discovered an old, automatic shipyard. Some ships still were in the production phase and our technicians tried to finish the construction, the energy supply of the shipyard first needed to be restored.';
 $LNG['sys_expe_found_ships_3_1']			= 'We have found a gigantic ship cemetery. Some technicians of the expedition have managed to get the ship into operation again.';
 $LNG['sys_expe_found_ships_3_2']			= 'We have discovered a planet with remains of a civilization. Another gigantic ship station which is still intact has been spotted from outerspace. Some of our technicians and pilots have gone onto the surface to look, whether a couple of the ships can be retrieved.';
 $LNG['sys_expe_lost_fleet_1']				= 'The only thing left of the expedition is the following radio message: Zzzrrt oh God!...Krrrzzzzt the zrrrtrzt sees krgzzzz yes from how Krzzzzzzzztzzzz...';
@@ -135,28 +135,28 @@ $LNG['sys_expe_nothing_5'] 					= 'We now know that red anomalies of class 5 not
 $LNG['sys_expe_nothing_6'] 					= 'Scans of this sector first promised to be good, but unfortunately we came back empty-handed.';
 $LNG['sys_expe_nothing_7'] 					= 'Perhaps it was better if we did not stop on this remote planet to celebrate the captains birthday for a short while. A nasty yellow fever has forced the majortiy of the crew to be send to the ward. The acute staff shortage was the reason that the expedition failed.';
 $LNG['sys_expe_nothing_8'] 					= 'Your expedition has found nothing else as the vast emptiness of space. There was not even a little asteroid, radiation particle or something else what could make this expedition at least a bit exciting.';
-$LNG['sys_expe_nothing_9'] 					= 'A reactor malfuntion on the  commandship almost destroyed the complete expedition. Fortunately the technicians were more than capable and could prevented the worst. The repair however, took so much time that the expedition returned without achieving anything.'; 	
+$LNG['sys_expe_nothing_9'] 					= 'A reactor malfuntion on the  commandship almost destroyed the complete expedition. Fortunately the technicians were more than capable and could prevented the worst. The repair however, took so much time that the expedition returned without achieving anything.';
 $LNG['sys_expe_attack_1_1_1'] 				= 'A space pirate in despair tried to commandeer our expeditions fleet.';
 $LNG['sys_expe_attack_1_1_2'] 				= 'Some primitive barbarians attacked us with spaceships, at least their ships were in horrible conditions. If the firepower was a serious threat we would have beene forced to reply with our firepower.';
 $LNG['sys_expe_attack_1_1_3'] 				= 'We have intercepted a couple of radio messages of some very drunk pirates. We apparently will be attacked.';
 $LNG['sys_expe_attack_1_1_4'] 				= 'We had to fight against some pirates who fortunately were outnumbered against us.';
 $LNG['sys_expe_attack_1_1_5'] 				= 'Our fleet reports that a certain Moa Tikarr and his crew requested the unconditional surrender of our fleet. If they are serious, they will have to find out that we can defend ourself very well.';
-$LNG['sys_expe_attack_1_2_1'] 				= 'Your expedition fleet had an unforseen encounter with some spacepirates.';
-$LNG['sys_expe_attack_1_2_2'] 				= 'We flew into an ambush of some starpirates! Unfortunately a fight was unavoidable.';
-$LNG['sys_expe_attack_1_2_3'] 				= 'The call for help of another expeditionfleet turned out to be a trap of some cunning pirates. A battle was unavoidable.';
+$LNG['sys_expe_attack_1_2_1'] 				= 'Your expedition fleet had an unforseen encounter with some Space Pirates.';
+$LNG['sys_expe_attack_1_2_2'] 				= 'We flew into an ambush set by pirates! Unfortunately a fight was unavoidable.';
+$LNG['sys_expe_attack_1_2_3'] 				= 'The call for help of another expedition fleet turned out to be a trap of some cunning pirates. A battle was unavoidable.';
 $LNG['sys_expe_attack_1_3_1'] 				= 'The intercepted signals did not came from some unknown aliens but of a secret pirate base! The pirates were not very happy by our presence in their sector.';
 $LNG['sys_expe_attack_1_3_2'] 				= 'The expedition fleet reported heavy fights with unidentified pirate ships!';
-$LNG['sys_expe_attack_2_1_1'] 				= 'Your expedition fleet had an uninteresting first contact with new aliens.';
+$LNG['sys_expe_attack_2_1_1'] 				= 'Your expedition fleet had uninteresting first contact with a new alien species';
 $LNG['sys_expe_attack_2_1_2'] 				= 'Some strange ships have attacked the expedition fleet without early warning!';
-$LNG['sys_expe_attack_2_1_3'] 				= 'Our expedition was attacked by a small group of unknown ships!';
-$LNG['sys_expe_attack_2_1_4'] 				= 'The expedition fleet reports contact with unknown ships. The radio messages are not able to be decoded, however, the strange ships seem to activate their weapons.';
-$LNG['sys_expe_attack_2_2_1'] 				= 'An unknown specie attacks our expedition!';
+$LNG['sys_expe_attack_2_1_3'] 				= 'Our Expedition was attacked by a small group of unknown ships!';
+$LNG['sys_expe_attack_2_1_4'] 				= 'The Expedition fleet reports contact with unknown ships. The radio messages are not able to be decoded, however, sensor reports show that the unknown vessels activated their weapons.';
+$LNG['sys_expe_attack_2_2_1'] 				= 'An unknown species attacked our expedition!';
 $LNG['sys_expe_attack_2_2_2'] 				= 'Your expedition fleet has apparently violated the territory of a previously unknown but highly aggressive alien race.';
 $LNG['sys_expe_attack_2_2_3'] 				= 'The connection with our expedition fleet was disconnected abruptly. The last what we heard of the fleet was that it was taking heavy fire - the aggressors could not be identified.';
 $LNG['sys_expe_attack_2_3_1'] 				= 'Your expedition has come across an alien invasion fleet and reports massive battles!';
 $LNG['sys_expe_attack_2_3_2'] 				= 'A large group of crystalline ships of unknown origin is on a direct collision course with our expedition fleet. We must prepare ourself for the worst.';
-$LNG['sys_expe_attackname_1']				= 'Pirates'; 	
-$LNG['sys_expe_attackname_2'] 				= 'Aliens'; 	
+$LNG['sys_expe_attackname_1']				= 'Pirates';
+$LNG['sys_expe_attackname_2'] 				= 'Aliens';
 $LNG['sys_expe_back_home'] 					= 'Your fleet has returned from the expedition.<br>It deliveres %s %s, %s %s, %s %s and %s %s.';
 $LNG['sys_expe_back_home_without_dm']		= 'Your fleet has returned from the expedition.';
 $LNG['sys_expe_back_home_with_dm']			= 'Your fleet has returned from the expedition.<br>They found (%s)%s but the ships were scrapped. <br>the %s was saved.';
@@ -165,29 +165,29 @@ $LNG['sys_tran_mess_owner']		 			= 'One of your fleets reaches the planet %s %s 
 $LNG['sys_tran_mess_user'] 		 			= 'A peaceful fleet of %s %s reached %s %s and delivers %s %s, %s %s and %s %s.';
 $LNG['sys_mess_fleetback'] 					= 'Fleet return';
 $LNG['sys_tran_mess_back'] 					= 'One of your fleets returns from the planet %s %s.';
-$LNG['sys_recy_gotten'] 					= 'Having arrived at there destination your Recyclers collect %s %s and %s %s';
+$LNG['sys_recy_gotten'] 					= 'Having arrived at their destination your Recyclers collect %s %s and %s %s';
 $LNG['sys_gain'] 				  			= 'Profit';
-$LNG['sys_irak_subject'] 				  	= 'Rocket impact';
+$LNG['sys_irak_subject'] 				  	= 'Missile Impact';
 $LNG['sys_irak_no_def'] 				  	= 'The planet does not have defences';
-$LNG['sys_irak_no_att'] 				  	= 'All your rockets were intercepted.';
-$LNG['sys_irak_def'] 					  	= '%d Rockets of yours were intercepted.';
-$LNG['sys_irak_mess']						= 'Interplanetary rockets (%d) from %s are on the planet %s <br><br>';
+$LNG['sys_irak_no_att'] 				  	= 'All of your Missiles were intercepted.';
+$LNG['sys_irak_def'] 					  	= '%d Missiles of yours were intercepted.';
+$LNG['sys_irak_mess']						= 'Interplanetary Missiles (%d) from %s are on the planet %s <br><br>';
 $LNG['sys_gain'] 				  			= 'Profit';
 $LNG['sys_fleet_won'] 						= 'One of your fleets returns from a attack at the planet %s %s. You have captured %s %s, %s %s and %s %s ';
 $LNG['sys_lost'] 							= 'Losses';
-$LNG['sys_debris'] 							= 'Rubblefield';
+$LNG['sys_debris'] 							= 'Debris Field';
 $LNG['sys_destruc_title']       		   	= 'The following fleets face each other for a moon destruction:';
 $LNG['sys_mess_destruc_report']  		  	= 'Report: Moon destruction';
 $LNG['sys_raport_not_found']				= 'Invalid Battle Report ID';
 
-$LNG['sys_raport_lost_contact']				= 'The contact to the attacking fleet was lost (that is, it was shot down in the first round.)';
-$LNG['sys_destruc_lune']          		 	= 'The probability of a moon destruction is: %d%% ';
-$LNG['sys_destruc_rip']          			= 'The probability of a self-destruction of the fleet is: %d%%';
-$LNG['sys_destruc_stop']      			 	= 'The defender has blocked the moon destruction successfully.';
-$LNG['sys_destruc_mess1']       		   	= 'The deathstars fired their tremendous energy at the moon. ';
-$LNG['sys_destruc_echec']       		   	= 'Earthquakes shook the planet. But something went wrong, the deathstars exploded and disintegrated into a thousands pieces, the shockwaves took out the entire fleet.';
-$LNG['sys_destruc_reussi']      		   	= 'The deathstars beams reached the moon and teared it to pieces. <br>The entire moon was destroyed.';
-$LNG['sys_destruc_null']        		   	= 'The deathstars could not charge fully before firing and imploded.<br> The moon is not destroyed.';
+$LNG['sys_raport_lost_contact']	= 'Contact to the attacking fleet was lost (that is, it was shot down in the first round.)';
+$LNG['sys_destruc_lune']        = 'The probability of a moon destruction is: %d%% ';
+$LNG['sys_destruc_rip']         = 'The probability of a self-destruction of the fleet is: %d%%';
+$LNG['sys_destruc_stop']      	= 'The defender has blocked moon\'s destruction.';
+$LNG['sys_destruc_mess1']       = 'The Battle Fortresses fired their tremendous energy at the moon. ';
+$LNG['sys_destruc_echec']       = 'Earthquakes shook the surface. But something went wrong, the Battle Fortresses exploded and disintegrated into a thousands pieces, the shockwaves took out the entire fleet.';
+$LNG['sys_destruc_reussi']      = 'The Battle Fortresses beams reached the moon and teared it to pieces. <br>The entire moon was destroyed.';
+$LNG['sys_destruc_null']        = 'The Battle Fortresses could not charge fully before firing and imploded.<br> The moon is not destroyed.';
 
 
 $LNG['fcp_colony']							= 'Colony';

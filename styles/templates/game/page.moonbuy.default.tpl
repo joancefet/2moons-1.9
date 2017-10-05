@@ -13,7 +13,7 @@
 				<img src="styles/theme/gow/planeten/moon_req_pic.png" width="120" height="120">
 			</td>
 			<td>
-				 A moon will be placed to your planet for a price of {$cost|number} Dark matter. 
+				 A moon will be placed to your planet for a price of {$cost} Dark matter.
 			</td>
 		</tr>
 		<tr>

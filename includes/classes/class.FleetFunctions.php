@@ -407,11 +407,12 @@ class FleetFunctions
 	
 	public static function GetAvailableMissions($USER, $MissionInfo, $GetInfoPlanet)
 	{	
+		$ImmunityUntil          = $USER['immunity_until'] > TIMESTAMP;
 		$YourPlanet				= (!empty($GetInfoPlanet['id_owner']) && $GetInfoPlanet['id_owner'] == $USER['id']) ? true : false;
 		$UsedPlanet				= (!empty($GetInfoPlanet['id_owner'])) ? true : false;
 		$availableMissions		= array();
 		
-		if ($MissionInfo['planet'] == (Config::get($USER['universe'])->max_planets + 1) && isModuleAvailable(MODULE_MISSION_EXPEDITION))
+		if ($MissionInfo['planet'] == (Config::get($USER['universe'])->max_planets + 1) && $ImmunityUntil && isModuleAvailable(MODULE_MISSION_EXPEDITION))
 			$availableMissions[]	= 15;	
 		elseif ($MissionInfo['planettype'] == 2) {
 			if ((isset($MissionInfo['Ship'][209]) || isset($MissionInfo['Ship'][219])) && $USER['immunity_until'] < TIMESTAMP && isModuleAvailable(MODULE_MISSION_RECYCLE) && !($GetInfoPlanet['der_metal'] == 0 && $GetInfoPlanet['der_crystal'] == 0))
@@ -424,22 +425,22 @@ class FleetFunctions
 				if(isModuleAvailable(MODULE_MISSION_TRANSPORT))
 					$availableMissions[]	= 3;
 					
-				if (!$YourPlanet && self::OnlyShipByID($MissionInfo['Ship'], 210) && isModuleAvailable(MODULE_MISSION_SPY) && $USER['immunity_until'] < TIMESTAMP)
+				if (!$YourPlanet && $ImmunityUntil && self::OnlyShipByID($MissionInfo['Ship'], 210) && isModuleAvailable(MODULE_MISSION_SPY) && $USER['immunity_until'] < TIMESTAMP)
 					$availableMissions[]	= 6;
 
 				if (!$YourPlanet) {
-					if(isModuleAvailable(MODULE_MISSION_ATTACK))
+					if(isModuleAvailable(MODULE_MISSION_ATTACK) && $ImmunityUntil)
 						$availableMissions[]	= 1;
 					if(isModuleAvailable(MODULE_MISSION_HOLD))
 						$availableMissions[]	= 5;}
 						
-				elseif(isModuleAvailable(MODULE_MISSION_STATION)) {
+				elseif(isModuleAvailable(MODULE_MISSION_STATION) && $ImmunityUntil) {
 					$availableMissions[]	= 4;}
 					
-				if (!empty($MissionInfo['IsAKS']) && !$YourPlanet && isModuleAvailable(MODULE_MISSION_ATTACK) && isModuleAvailable(MODULE_MISSION_ACS))
+				if (!empty($MissionInfo['IsAKS']) && $ImmunityUntil && !$YourPlanet && isModuleAvailable(MODULE_MISSION_ATTACK) && isModuleAvailable(MODULE_MISSION_ACS))
 					$availableMissions[]	= 2;
 
-				if (!$YourPlanet && $MissionInfo['planettype'] == 3 && isset($MissionInfo['Ship'][214]) && isModuleAvailable(MODULE_MISSION_DESTROY))
+				if (!$YourPlanet && $ImmunityUntil && $MissionInfo['planettype'] == 3 && isset($MissionInfo['Ship'][214]) && isModuleAvailable(MODULE_MISSION_DESTROY))
 					$availableMissions[]	= 9;
 
 				if ($YourPlanet && $MissionInfo['planettype'] == 3 && self::OnlyShipByID($MissionInfo['Ship'], 220) && isModuleAvailable(MODULE_MISSION_DARKMATTER))

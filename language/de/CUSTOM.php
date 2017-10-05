@@ -18,3 +18,5 @@
 // If you have custom lang vars, you can include them here. The file ll be not overwrite by updatemanager
 // Also you can overwrite exists var, too. You use the same key.
  
+$LNG['fl_in_immunity_player']				= 'The player is in immunity mode';
+$LNG['fa_immunity_mode']					= 'Player is in immunity mode';

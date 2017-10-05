@@ -244,7 +244,7 @@ class ShowFleetStep1Page extends AbstractGamePage
 		if ($targetPlanet != Config::get()->max_planets + 1)
 		{
 			$db = Database::get();
-            $sql = "SELECT u.id, u.urlaubs_modus, u.user_lastip, u.authattack,
+            $sql = "SELECT u.id, u.urlaubs_modus, u.user_lastip, u.authattack, u.immunity_until,
             	p.destruyed, p.der_metal, p.der_crystal, p.destruyed
                 FROM %%USERS%% as u, %%PLANETS%% as p WHERE
                 p.universe = :universe AND
@@ -272,6 +272,10 @@ class ShowFleetStep1Page extends AbstractGamePage
 				$this->sendJSON($LNG['fl_in_vacation_player']);
 			}
 
+			if ($targetPlanetType != 2 && $planetData['immunity_until'] > TIMESTAMP && $USER['id'] != $planetData['id'])
+            {
+                $this->sendJSON($LNG['fl_in_immunity_player']);
+            }
 			if ($planetData['id'] != $USER['id'] && Config::get()->adm_attack == 1 && $planetData['authattack'] > $USER['authlevel'])
 			{
 				$this->sendJSON($LNG['fl_admin_attack']);

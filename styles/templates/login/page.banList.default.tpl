@@ -5,7 +5,7 @@
 			<div class="col-lg-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">{$LNG.bn_players_banned_list}</div>
-                    {if $isMultiUniverse}<p>{html_options options=$universeSelect selected=$UNI class="changeUni" id="universe" name="universe"}</p>{/if}
+                    {if $isMultiUniverse}<p>{html_options options=$universeSelect selected=$UNI class="form-control changeUni" id="universe" name="universe"}</p>{/if}
 					<table class="table table-hover">
 						<thead>
 						<tr>
@@ -42,33 +42,26 @@
 							<ul class="pagination pagination-sm">
                                 {if $page != 1}
 									<li>
-										<a href="#">Prev</a>
+										<a href="index.php?page=banList&amp;side={$page - 1}">Prev</a>
 									</li>
 								{/if}
                                 {for $site=1 to $maxPage}
                                     {if $site == $page}
 										<li class="active">
+											<a href="#" onclick="false;">{$site}</a>
+										</li>
+									{else}
+										<li>
 											<a href="index.php?page=banList&amp;side={$site}">{$site}</a>
 										</li>
                                     {/if}
                                 {/for}
+                                {if $page != $maxPage}
 								<li>
-									<a href="#">2</a>
+									<a href="index.php?page=banList&amp;side={$page + 1}">Next</a>
 								</li>
-								<li>
-									<a href="#">3</a>
-								</li>
-								<li>
-									<a href="#">4</a>
-								</li>
-								<li>
-									<a href="#">Next</a>
-								</li>
+								{/if}
 							</ul>
-							<tr>
-								<td style="text-align:right;" colspan="5">
-									{for $site=1 to $maxPage}<a href="index.php?page=banList&amp;side={$site}">{if $site == $page}<b>[{$site}]</b>{else}[{$site}]{/if}</a>{if $site != $maxPage}&nbsp;{/if}{/for}{if $page != $maxPage}&nbsp;<a href="index.php?page=banList&amp;side={$page + 1}">&raquo;</a>{/if}</td>
-							</tr>
                         {/if}
 					</div>
 				</div>

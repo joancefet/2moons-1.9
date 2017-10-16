@@ -1,21 +1,21 @@
 <?php
 /**
- *  2Moons 
+ *  2Moons
  *   by Jan-Otto Kröpke 2009-2016
  *
  * For the full copyright and license information, please view the LICENSE
  *
  * @package 2Moons
- * @author Jan-Otto Kröpke <slaver7@gmail.com>
- * @copyright 2009 Lucky
- * @copyright 2016 Jan-Otto Kröpke <slaver7@gmail.com>
+ * @author mvw <mvgadmin@gmail.com>
+ * @copyright 2017 2moons
+ * @copyright 2017 Jan-Otto Kröpke <slaver7@gmail.com>
  * @licence MIT
- * @version 1.8.0
- * @link https://github.com/jkroepke/2Moons
+ * @version 1.9.0
+ * @link https://github.com/HikeGame/2moons-1.9
  */
 
-// Translated into English by QwataKayean . All rights reversed (C) 2012
-// 2Moons - Copyright (C) 2010-2012 Slaver
+// Translated into English by mvw. All rights reversed (C) 2017
+// 2Moons - Copyright (C) 2010-2017
 
 
 $LNG['shortNames'] = array (
@@ -57,22 +57,22 @@ $LNG['bonus'] = array(
 	'Defensive'			=> 'Defence',
 	'Shield'			=> 'Shield',
 	'BuildTime'			=> 'Construction Time',
-	'ResearchTime'		=> 'Research time',
-	'ShipTime'			=> 'Ship Building time',
-	'DefensiveTime'		=> 'Defense Building time',
-	'Resource'			=> 'Production of Resources',
-	'Energy'			=> 'Production of Energy',
-	'ResourceStorage'	=> 'Resource storage',
-	'ShipStorage'		=> 'Ships storage',
-	'FlyTime'			=> 'Flying time',
+	'ResearchTime'		=> 'Research Time',
+	'ShipTime'			=> 'Ship Construction Time',
+	'DefensiveTime'		=> 'Defense Construction Time',
+	'Resource'			=> 'Resource Production',
+	'Energy'			=> 'Energy Production',
+	'ResourceStorage'	=> 'Resource Storage capacity',
+	'ShipStorage'		=> 'Ships Storage capacity',
+	'FlyTime'			=> 'Flight Time',
 	'FleetSlots'		=> 'Fleet Slots',
 	'Planets'			=> 'Planets',
-	'SpyPower'			=> 'Espionage power',
+	'SpyPower'			=> 'Espionage Power',
 	'Expedition'		=> 'Expeditions',
-	'GateCoolTime'		=> 'Jump gate charging time',
+	'GateCoolTime'		=> 'Jump Gate charge time',
 	'MoreFound'			=> 'Expedition Found',
 );
-					
+
 $LNG['tech'] = array(
   0 => 'Buildings',
   1 => 'Metal Mine',
@@ -93,7 +93,7 @@ $LNG['tech'] = array(
  44 => 'Missile Silo',
 
  40 => 'Moon Buildings',
- 41 => 'Moon base',
+ 41 => 'Moon Base',
  42 => 'Phalax Sensor',
  43 => 'Jumpgate',
 
@@ -191,31 +191,31 @@ $LNG['tech'] = array(
 );
 
 $LNG['shortDescription'] = array(
-1 => 'Used in the extraction of metal ore, metal mines are of primary importance to all emerging and established empires.',
-2 => 'Crystals are the main resource used to build electronic circuits and form certain alloy compounds.',
-3 => 'Deuterium is used as fuel for spaceships and is harvested in the deep sea. Deuterium is a rare substance and is thus relatively expensive.',
-4 => 'Solar power plants absorb energy from solar radiation. All mines need energy to operate.',
+1 => 'Used to extract Metal Ore, Metal Mines are of primary importance to all emerging and established empires',
+2 => 'Crystal is the main resource used to build electronic circuits and form certain alloy compounds',
+3 => 'Deuterium is used as fuel on spaceships and is harvested in the deep oceans. Deuterium is a rare substance and is thus relatively expensive.',
+4 => 'Solar power plants absorb energy from solar radiation. All mines need energy to operate efficiently',
 6 => 'Shortens research time each level by 8%.',
-12 => 'The fusion reactor uses deuterium to produce energy.',
-14 => 'Robotic factories provide construction robots to aid in the construction of buildings. Each level increases the speed of the upgrade of buildings',
-15 => 'This is the ultimate in robotics technology. Each level cuts the construction time for buildings, ships, and defenses',
-21 => 'All types of ships and defensive facilities are built in the planetary shipyard',
+12 => 'The fusion reactor uses Deuterium to produce energy.',
+14 => 'RoboT Factories provide construction robots to aid in the construction of buildings. Each level increases the speed of the upgrade of buildings',
+15 => 'This is the ultimate in Robotics Technology. Each level cuts the construction time for buildings, ships, and defenses',
+21 => 'All types of ships and defensive facilities are built in the planetary shipyard. Each upgrade provides more facilities to construct ships',
 22 => 'Provides storage for excess Metal.',
 23 => 'Provides storage for excess Crystal.',
 24 => 'Provides storage for excess Deuterium',
-31 => 'A research lab is required in order to conduct research into new technologies.',
+31 => 'A Research Lab is required in order to conduct research into new technologies.',
 33 => 'The Terraformer increases the usable area on the planet.',
-34 => 'The Alliance Depot offers the possibility to supply fuel to friendly fleets in orbit.',
-41 => 'The moon has no atmosphere therefore a lunar base must be built before the settlement of other buildings.',
-42 => 'The sensor array allows you to monitor fleet movements. The higher the stage, the greater is the range of the phalanx.',
-43 => 'Jump gates are huge transmitters that are able to send large fleets without loss of time through the universe.',
-44 => 'missile silos used for storage of rockets.',
+34 => 'The Alliance Depot offers the possibility to supply fuel to friendly fleets in orbit. Used in Hold missions',
+41 => 'As Moon\'s have no atmosphere a Moon Base must be built before the construction of other buildings.',
+42 => 'This sensor array allows you to monitor fleet movements. The higher the stage, the greater is the range of the Phalanx.',
+43 => 'Jump Gates are huge transmitters that are able to send large fleets without loss of time through the universe',
+44 => 'Missile Silos used for storage of Missiles',
 
-106 => 'Information about other planets and moons can be gained using this technology.',
-108 => 'More fleets can be commanded by increasing computer capacities. Each level of computer technology increases the maximum number of fleets by one.',
-109 => 'Weapons technology makes weapons systems more efficient. Each level of weapons technology increases the weapon strength of units by 10 % of the base value.',
-110 => 'Shielding technology makes the shields on ships and defensive facilities more efficient. Each level of shield technology increases the strength of the shields by 10 % of the base value.',
-111 => 'Special alloys improve the armour on ships and defensive structures. The effectiveness of the armour can be increased by 10 % per level.',
+106 => 'Information about other planets and moons can be obtained using this technology.',
+108 => 'More fleets can be commanded by increasing computer capacities. Each level of computer technology increases the maximum number of fleets by one',
+109 => 'Weapons Technology makes weapons systems more efficient. Each level of Weapons Technology increases the weapon strength by 10 % of the base value',
+110 => 'Shielding Technology makes the shields of ships and defensive facilities more efficient. Each Shield Technology level increases shield strength by 10 % of the base value',
+111 => 'Special alloys improve the armour on ships and defensive structures. The effectiveness of the armour can be increased by 10 % per level',
 113 => 'The command of different types of energy is necessary for many new technologies.',
 114 => 'By integrating the 4th and 5th dimensions it is now possible to research a new kind of drive that is more economical and efficient.',
 115 => 'The development of this drive makes some ships faster, although each level increases speed by only 10 % of the base value.',
@@ -233,15 +233,15 @@ $LNG['shortDescription'] = array(
 
 202 => 'The light cargo is an agile ship which can quickly transport resources to other planets.',
 203 => 'This cargo ship has a much larger cargo capacity than the light cargo, and is generally faster thanks to an improved drive.',
-204 => 'This is the first fighting ship all emperors will build. The light fighter is an agile ship, but vulnerable on its own. In mass numbers, they can become a great threat to any empire. They are the first to accompany small and large cargoes to hostile planets with minor defences.',
-205 => 'This fighter is better armoured and has a higher attack strength than the light fighter.',
+204 => 'This is the first fighting ship all emperors will build. The light fighter is an agile ship, but vulnerable on its own. In mass numbers, they can become a great threat to any empire. They are the first to accompany Small and Large Cargo ships to hostile planets with minor defences.',
+205 => 'This fighter is better armored and has a higher attack strength than the light fighter.',
 206 => 'Cruisers are armoured almost three times as heavily as heavy fighters and have more than twice the firepower. In addition, they are very fast.',
 207 => 'Battleships form the backbone of a fleet. Their heavy cannons, high speed, and large cargo holds make them opponents to be taken seriously.',
-208 => 'Vacant planets can be colonized with this ship.',
-209 => 'The recycler can get raw materials from debris fields.',
-210 => 'Spy probes are small agile drones, which provide data over long distances on fleets and planets.',
-211 => 'The bomber was specially designed to destroy a planets defences.',
-212 => 'Solar satellites are simple platforms of solar cells that are located in a high stationary orbit. They collect the sunlight and pass it on to the ground station via laser. ',
+208 => 'Vacant planets can be colonized with this ship',
+209 => 'The Recycler can mine raw materials from a debris field',
+210 => 'Spy Probes are small agile drones, which provide data over long distances on fleets and planets.',
+211 => 'The Bomber was specially designed to destroy a planets defences.',
+212 => 'Solar Satellites are simple platforms of solar cells that are located in a high stationary orbit. They collect the sunlight and pass it on to the ground station via laser. ',
 213 => 'The destroyer is the king of the warships.',
 214 => 'The destructive power of the Death Star is second to none and can destroy moons.',
 215 => 'The Battle Cruiser is specialized in the interception of hostile fleets.',
@@ -324,7 +324,7 @@ $LNG['longDescription'] = array(
 118 => 'Hyperspace drive warps space around a ship. The development of this drive makes some ships faster, although each level increases speed by only 30 % of the base value.',
 120 => 'Focusing light produces a beam that causes damage when it strikes an object.',
 121 => 'A deadly beam of accelerated ions. This causes enormous damage when striking an object.',
-122 => 'A further development of ion technology which accelerates high-energy Plasma, a result of super-heating Ions. This has a devastating effect when striking an object.',
+122 => 'Further development of ion technology which accelerates high-energy Plasma, a result of super-heating Ions. This has a devastating effect when striking an object.',
 123 => 'Researchers on different planets communicate via this network.',
 124 => 'With an astrophysics research module, ships can undertake long expeditions. Every second level of this technology will allow you to colonise an extra planet.',
 131 => 'Increases the production of Metal by 2%',
@@ -332,9 +332,9 @@ $LNG['longDescription'] = array(
 133 => 'Increases the production of Deuterium by 2%',
 199 => 'Firing a concentrated charge of graviton particles can create an artificial gravity field, which can destroy ships or even moons.',
 
-202 => 'The light cargo is an agile ship which can quickly transport resources to other planets.',
-203 => 'This cargo ship has a much larger cargo capacity than the light cargo, and is generally faster thanks to an improved drive.',
-204 => 'This is the first fighting ship all emperors will build. The light fighter is an agile ship, but vulnerable on its own. In mass numbers, they can become a great threat to any empire. They are the first to accompany small and large cargoes to hostile planets with minor defences.',
+202 => 'The Light Cargo Ship is an agile ship which can quickly transport resources to other planets.',
+203 => 'This Cargo Ship has a much larger cargo capacity than the light cargo, and is generally faster thanks to an improved drive.',
+204 => 'This is the first fighting ship all emperors will build. The Light Fighter is an agile ship, but vulnerable on its own. In mass numbers, they can become a great threat to any empire. They are the first to accompany small and large cargoes to hostile planets with minor defences.',
 205 => 'This fighter is better armoured and has a higher attack strength than the light fighter.',
 206 => 'Cruisers are armoured almost three times as heavily as heavy fighters and have more than twice the firepower. In addition, they are very fast.',
 207 => 'Battleships form the backbone of a fleet. Their heavy cannons, high speed, and large cargo holds make them opponents to be taken seriously.',
@@ -343,14 +343,14 @@ $LNG['longDescription'] = array(
 210 => 'Spy probes are small agile drones, which provide data over long distances on fleets and planets.',
 211 => 'The bomber was specially designed to destroy a planets defences.',
 212 => 'Solar satellites are simple platforms of solar cells that are located in a high stationary orbit. They collect the sunlight and pass it on to the ground station via laser. ',
-213 => 'The destroyer is the king of the warships.',
-214 => 'The destructive power of the Death Star is second to none and can destroy moons.',
+213 => 'The Destroyer is the king of the warships.',
+214 => 'The destructive power of the Battle Fortress is second to none and can destroy moons.',
 215 => 'The Battle Cruiser is specialized in the interception of hostile fleets.',
-216 => 'The successor of the popular death star, faster but not as strong.',
+216 => 'The successor of the popular Battle Fortress. The slow speed of the vessel is compensated by the terrifying arsenal of weapons.',
 217 => 'Is a development of the large cargo, it has more carry capacity and flies faster with the right techonology.',
 218 => 'The absolute worst case scenario, albeit very slowly.',
-219 => 'Is a huge cargo space and new engines, enable it to fly faster and gather more in debris fields .',
-220 => 'After long years of research dark matter is now collectable from the moon.',
+219 => 'Is a huge cargo space and new engines, enable it to fly faster and gather more in debris fields.',
+220 => 'This vessel allows Dark Matter to be collected from a moon, the extraction process could however destroy the moon.',
 
 401 => 'The Rocket Launcher is a simple but cost-effective defense.',
 402 => 'Light Lasers are simple ground based weapons that utilize special targeting systems to track the enemy and fire a high intensity laser designed to cut through the hull of the target.',
@@ -390,5 +390,5 @@ $LNG['longDescription'] = array(
 704 => 'Increases resource production',
 705 => 'Increases energy production',
 706 => 'Shortens research time',
-707 => 'Shortens flying time. Does not affect Expeditions.',
+707 => 'Shortens flight time. Does not affect Expeditions.',
 );
